@@ -1,0 +1,76 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-age-by-name-using-agify.io-api;retrieve-the-age-for-a-given-name",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve the age for a given name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am an authenticated user",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1652974541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should include the age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139542
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-age-by-name-using-agify.io-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get age by name using agify.io API",
+    "tags": [],
+    "uri": "features/agify.feature"
+  }
+]
