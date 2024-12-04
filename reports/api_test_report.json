@@ -1,0 +1,343 @@
+[
+  {
+    "description": "  As a user of Agify.io API,\n  I want to retrieve the estimated age for a given name,\n  So that I can gain insights into the age distribution of people with that name.",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;verify-that-the-api-returns-an-error-when-name-parameter-is-missing",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Verify that the API returns an error when name parameter is missing",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I send a GET request without the name parameter",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371749000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the API should respond with status code 422",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the response should include an error message indicating missing name parameter",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174167
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;verify-that-the-api-returns-null-age-for-an-invalid-name",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Verify that the API returns null age for an invalid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I send a GET request with an invalid 'invalid_name'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347068958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 392291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "the response should include the 'invalid_name'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the age should be null",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the count should be 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365041
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;verify-that-the-api-returns-null-age-for-an-invalid-name",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Verify that the API returns null age for an invalid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 271082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I send a GET request with an invalid '123'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 353865082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 451958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "the response should include the '123'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 433375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the age should be null",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the count should be 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168750
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;verify-that-the-api-returns-null-age-for-an-invalid-name",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Verify that the API returns null age for an invalid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I send a GET request with an invalid ''",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337343917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "the response should include the ''",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the age should be null",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the count should be 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89167
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-age-based-on-names-using-agify.io-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get age based on names using Agify.io API",
+    "tags": [],
+    "uri": "features/agify.feature"
+  }
+]
