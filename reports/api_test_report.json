@@ -4,6 +4,657 @@
     "elements": [
       {
         "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-the-age-for-a-valid-name",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Retrieve the age for a valid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send a GET request with a valid 'Ava'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375529292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 429583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response should include the 'Ava'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should include the estimated age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the age should be a number",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should include a count of occurrences",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the count should be a number greater than 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181291
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-the-age-for-a-valid-name",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Retrieve the age for a valid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send a GET request with a valid 'bob'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344160208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response should include the 'bob'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should include the estimated age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the age should be a number",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should include a count of occurrences",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the count should be a number greater than 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254791
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-the-age-for-a-valid-name",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Retrieve the age for a valid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send a GET request with a valid 'CHARLIE'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347426041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 425000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response should include the 'CHARLIE'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should include the estimated age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the age should be a number",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should include a count of occurrences",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the count should be a number greater than 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137542
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-the-age-for-a-valid-name",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Retrieve the age for a valid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send a GET request with a valid 'John Doe'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351076458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response should include the 'John Doe'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should include the estimated age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the age should be a number",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 327792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should include a count of occurrences",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the count should be a number greater than 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99958
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-the-age-for-a-valid-name",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Retrieve the age for a valid name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send a GET request with a valid 'José'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 352261833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 246125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response should include the 'José'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should include the estimated age",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the age should be a number",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should include a count of occurrences",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the count should be a number greater than 0",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81125
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "get-age-based-on-names-using-agify.io-api;retrieve-ages-for-multiple-names",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Retrieve ages for multiple names",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the API is accessible",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I send a GET request with the names 'Ava', 'Emma' and 'Liam'",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 364561374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the response should include the estimated age for each name",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 320667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the response should include a count of occurrences for each name",
+            "match": {
+              "location": "features/step_definitions/agifySteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189750
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
         "id": "get-age-based-on-names-using-agify.io-api;verify-that-the-api-returns-an-error-when-name-parameter-is-missing",
         "keyword": "Scenario",
         "line": 35,
@@ -19,7 +670,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417208
+              "duration": 47500
             }
           },
           {
@@ -32,7 +683,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 371749000
+              "duration": 354343374
             }
           },
           {
@@ -45,7 +696,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 395624
+              "duration": 261707
             }
           },
           {
@@ -58,7 +709,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 174167
+              "duration": 213250
             }
           }
         ],
@@ -82,7 +733,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57666
+              "duration": 49332
             }
           },
           {
@@ -95,7 +746,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 347068958
+              "duration": 355732957
             }
           },
           {
@@ -108,7 +759,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 392291
+              "duration": 99291
             }
           },
           {
@@ -121,7 +772,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 377332
+              "duration": 60041
             }
           },
           {
@@ -134,7 +785,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 202708
+              "duration": 95374
             }
           },
           {
@@ -147,7 +798,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 365041
+              "duration": 65875
             }
           }
         ],
@@ -171,7 +822,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 271082
+              "duration": 20042
             }
           },
           {
@@ -184,7 +835,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 353865082
+              "duration": 357130042
             }
           },
           {
@@ -197,7 +848,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 451958
+              "duration": 234541
             }
           },
           {
@@ -210,7 +861,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 433375
+              "duration": 125792
             }
           },
           {
@@ -223,7 +874,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 162957
+              "duration": 79166
             }
           },
           {
@@ -236,7 +887,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168750
+              "duration": 82667
             }
           }
         ],
@@ -260,7 +911,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 231375
+              "duration": 46082
             }
           },
           {
@@ -273,7 +924,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 337343917
+              "duration": 354054000
             }
           },
           {
@@ -286,7 +937,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 204083
+              "duration": 270874
             }
           },
           {
@@ -299,7 +950,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149208
+              "duration": 116875
             }
           },
           {
@@ -312,7 +963,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 84708
+              "duration": 72499
             }
           },
           {
@@ -325,7 +976,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89167
+              "duration": 81749
             }
           }
         ],

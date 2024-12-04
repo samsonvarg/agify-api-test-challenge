@@ -25,9 +25,9 @@ To install and run this project, follow these steps:
 
 **Project Structure**
 
-features/: Contains the feature files written in Gherkin.
-features/step_definitions/: Contains the step definition files.
-reports/: Contains the generated HTML reports.
+- features/: Contains the feature files written in Gherkin.
+- features/step_definitions/: Contains the step definition files.
+- reports/: Contains the generated HTML reports.
 
 **Usage**
 
